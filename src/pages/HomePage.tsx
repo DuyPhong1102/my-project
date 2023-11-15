@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import {Header} from '../components/Header'
 
 type Product = {
   title: string;
@@ -11,17 +12,26 @@ const HomePage = () => {
   const [productList, setProductList] = useState<Product[]>([]);
 
   const fetchProducts = async () => {
-    const { data } = await axios.get("https://fakestoreapi.com/products");
-    setProductList(data);
+    try {
+      const { data } = await axios.get('https://fakestoreapi.com/products');
+      setProductList(data);
+    } catch (error) {
+      console.log(error);
+      
+    }
+
   };
 
   useEffect(() => {
     fetchProducts();
   }, []);
 
-  console.log("result", productList);
-
   return (
+    <>
+    
+    
+   
+    <Header/>
     <div className="flex flex-wrap gap-6">
       {productList.map((product, index) => (
         <div key={index} className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
@@ -67,6 +77,7 @@ const HomePage = () => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 

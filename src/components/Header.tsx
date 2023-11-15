@@ -11,8 +11,8 @@ export const Header = () => {
                     <a href="/" className="py-2 px-6 flex">
                         Home
                     </a>
-                    <a href="#" className="py-2 px-6 flex">
-                        Watch
+                    <a href="/profile" className="py-2 px-6 flex">
+                        Profile
                     </a>
                     <a href="#" className="py-2 px-6 flex">
                         Product
@@ -20,8 +20,8 @@ export const Header = () => {
                     <a href="#" className="py-2 px-6 flex">
                         Contact
                     </a>
-                    <a href="#" className="py-2 px-6 flex">
-                        Carrer
+                    <a href="/login" className="py-2 px-6 flex">
+                        Login
                     </a>
                 </nav>
                 <button className="lg:hidden flex flex-col ml-4">
@@ -63,6 +63,7 @@ export const Header = () => {
             </div>
         </div>
     </div>
+
 </main>
     )
   };

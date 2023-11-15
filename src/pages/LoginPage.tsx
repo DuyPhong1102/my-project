@@ -1,5 +1,9 @@
+import {Header} from '../components/Header'
+import {Footer} from '../components/Footer'
 const LoginPage = () => {
     return (
+        <>
+        <Header/>
       <section className="py-26 bg-white">
         <div className="container px-4 mx-auto">
           <div className="max-w-lg mx-auto">
@@ -33,6 +37,8 @@ const LoginPage = () => {
           </div>
         </div>
       </section>
+      <Footer/>
+      </>
       )
   };
   

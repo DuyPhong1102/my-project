@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import {Header} from '../components/Header'
-
+import {Footer} from '../components/Footer'
 type Product = {
   title: string;
   image: string;
@@ -32,7 +32,7 @@ const HomePage = () => {
     
    
     <Header/>
-    <div className="flex flex-wrap gap-6">
+    <div className="dark:bg-gray-800 mt-10 flex flex-wrap gap-6">
       {productList.map((product, index) => (
         <div key={index} className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
           <a href="#">
@@ -77,6 +77,7 @@ const HomePage = () => {
         </div>
       ))}
     </div>
+    <Footer/>
     </>
   );
 };

@@ -1,6 +1,12 @@
+import {Header} from '../components/Header'
+import {Footer} from '../components/Footer'
+
 const ProfilePage = () => {
     return (
-      <div className="max-w-md m-auto  ">
+      <>
+      <Header/>
+      <div className="bg-white  flex relative">
+      <div className=" max-w-md m-auto  ">
         <a href="#" className="group relative block bg-black h-max place-content-center">
           <img
             alt="Developer"
@@ -23,13 +29,16 @@ const ProfilePage = () => {
                  <h5>Age: 21</h5>
                  <h5>Hometown: Thanh Hoa</h5>
                  <h5>Career orientation: Front-end Developer</h5>
-                 <h5>Language: C, C#, JS, PHP</h5>
+                 <h5>Language:HTML/CSS, Tailwind, SQL, JS, PHP</h5>
                 </div>
               </div>
             </div>
           </div>
         </a>
       </div>
+      </div>
+      <Footer/>
+      </>
     )
   };
   

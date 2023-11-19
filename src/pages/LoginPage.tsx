@@ -1,6 +1,12 @@
 import {Header} from '../components/Header'
 import {Footer} from '../components/Footer'
+
 const LoginPage = () => {
+  fetch('https://fakestoreapi.com/users',{
+    method:'POST',
+})
+    .then(res=>res.json())
+    .then(json=>console.log(json))
     return (
         <>
         <Header/>

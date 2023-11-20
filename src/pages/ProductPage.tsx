@@ -33,7 +33,7 @@ const ProductPage = () => {
    
     <Header/>
     
-    <div className="dark:bg-gray-800 mt-10 flex flex-wrap gap-12">
+    <div className="dark:bg-gray-800 mt-10 flex flex-wrap gap-2">
       {productList.map((product, index) => (
         <div key={index} className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
           <a href="#">
